@@ -1,12 +1,14 @@
 PROGRAM NOT
 IMPLICIT NONE
 
-REAL :: vize_not, final_not, ort
-PRINT*,"Once vize sonra final notunu girin: "
-READ*, vize_not, final_not
+REAL :: vize_not, final_not, ort,v_a
+PRINT*,"Once vize sonra final notunu ardindan vize not agirligini girin: "
+READ*, vize_not, final_not,v_a
 
-ort = (vize_not * 0.5) + (final_not*0.5)
+ort = ((vize_not * v_a) + (final_not*(1-v_a))) / 2
 
 PRINT*, "NOTUNUZ: " , ort
+
+
 
 END PROGRAM NOT
