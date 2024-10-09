@@ -1,2 +1,5 @@
 düşünceler.txt
 *.py
+*md
+*.exe
+.gitignore
