@@ -1,0 +1,20 @@
+PROGRAM VF
+    IMPLICIT NONE
+    
+    REAL V,F,O
+    
+    PRINT*,"VIZE FINAL NOTU GIRIN: "
+    READ*, V,F
+
+    O = (V*0.5) + (F*0.5)
+
+    IF(V>=30 .AND. O>=50)THEN
+        PRINT*,"GECTINIZ"
+    ELSE 
+        IF(V<30 .AND. O>=50)THEN
+            PRINT*, "VIZE NOTU YUZUNDEN KALDINIZ"
+        ELSE IF(V>=30 .AND. O<50)THEN
+            PRINT*, "ORTALAMA YUZUNDEN KALDINIZ"
+        END IF
+    END IF
+END PROGRAM VF
