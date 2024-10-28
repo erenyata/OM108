@@ -1,0 +1,23 @@
+PROGRAM circle
+IMPLICIT NONE
+
+REAL r,a,c
+
+DOUBLE PRECISION, PARAMETER :: PI = 4*ATAN(1.0)
+
+40 FORMAT(1X,A6,F9.3,1X,A6,F10.4)
+
+OPEN(UNIT=20,FILE="SONUC.TXT")
+
+PRINT*,"YARICAP GIRIN: "
+READ*,r
+
+a = PI *(r**2)
+c = 2*PI*r
+ 
+
+WRITE(20,40)"ALAN= ", a , "CEVRE= ", c
+WRITE(*,40)"ALAN= ", a , "CEVRE= ", c
+
+
+END PROGRAM circle
